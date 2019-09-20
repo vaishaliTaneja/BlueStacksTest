@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-xs-12">
+    <table>
+      <thead>
+        <tr>
+          <td>
+            <div>Date</div>
+          </td>
+          <td>
+            <div>Campaign</div>
+          </td>
+          <td>
+            <div>View</div>
+          </td>
+          <td>
+            <div>Actions</div>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <app-campaign-item
+        *ngFor="let campaignEL of campaign; let i = index"
+        [campaign]="campaignEL"
+        [index]="i">
+      </app-campaign-item>
+        </tbody>
+    </table>
+  </div>
+</div>
+
